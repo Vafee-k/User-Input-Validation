@@ -1,0 +1,108 @@
+<!-- 
+Name: coffee
+File: strings.html
+Purpose: Validate user input and reveal a secret message
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page character encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Mobile friendly scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Browser tab title -->
+  <title>String Validation - Secret Message</title>
+
+  <!-- Google font (creative element) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+  <!-- Card container -->
+  <div class="card">
+
+    <!-- Header section -->
+    <div class="header">
+      <!-- Image (creative element) -->
+      <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=200&q=60" alt="Code Image">
+
+      <!-- Title text -->
+      <div>
+        <h1>Unlock the Secret Message</h1>
+        <p class="sub">Enter your name and ZIP code below.</p>
+      </div>
+    </div>
+
+    <!-- Single form (required) -->
+    <form id="userForm" novalidate>
+
+      <!-- Grid layout -->
+      <div class="grid">
+
+        <!-- First Name -->
+        <div>
+          <label for="firstName">First Name</label>
+          <input id="firstName" type="text">
+        </div>
+
+        <!-- Last Name -->
+        <div>
+          <label for="lastName">Last Name</label>
+          <input id="lastName" type="text">
+        </div>
+
+        <!-- ZIP Code -->
+        <div>
+          <label for="zip">ZIP Code</label>
+          <input id="zip" type="text">
+        </div>
+
+        <!-- Empty grid cell -->
+        <div></div>
+
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit">Submit</button>
+
+      <!-- Hint under button -->
+      <p class="hint">
+        Hint: Full name must be 20 characters or less. ZIP must be exactly 5 digits.
+      </p>
+
+      <!-- Pass/Fail status area -->
+      <div id="status"></div>
+
+      <!-- Message box area -->
+      <div id="message" class="msg"></div>
+
+      <!-- Hidden secret message area -->
+      <div id="secretBox" class="secret">
+        <h2>Secret Message</h2>
+        <p id="secretText"></p>
+      </div>
+
+    </form>
+
+  </div>
+
+  <!-- External JavaScript file -->
+  <script src="strings.js"></script>
+
+</body>
+</html>
+
+  <!-- External JavaScript file (no JS inside HTML allowed) -->
+  <script src="strings.js"></script>
+
+</body>
+</html>
